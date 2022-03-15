@@ -6,7 +6,7 @@ class HorizonatalListCg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
+      height: 90,
       color: Color.fromARGB(255, 61, 122, 153),
       child: ListView(
         scrollDirection: Axis.horizontal,
@@ -58,10 +58,10 @@ class CategoryData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 80,
-      height: 70,
+      width: 100,
+      height: 100,
       child: Padding(
-        padding: EdgeInsets.all(2),
+        padding: EdgeInsets.all(1),
         child: InkWell(
           onTap: () {},
           child: ListTile(

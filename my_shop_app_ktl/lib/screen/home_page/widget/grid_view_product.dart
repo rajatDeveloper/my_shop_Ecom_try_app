@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_shop_app_ktl/screen/home_page/view/product_detail.dart';
 import 'package:my_shop_app_ktl/utils/routes.dart';
 
 class ProductGrid extends StatefulWidget {
@@ -93,7 +94,13 @@ class SingleProduct extends StatelessWidget {
               child: Material(
                 child: InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, MyRoutes.product_data);
+                    Navigator.of(context).push(new MaterialPageRoute(
+                        builder: (context) => ProductDataOneToOne(
+                              product_img_d: product_img,
+                              product_name_d: product_name,
+                              product_old_price_d: product_old_price,
+                              product_price_d: product_price,
+                            )));
                   },
                   child: GridTile(
                     child: Image.network(product_img),
