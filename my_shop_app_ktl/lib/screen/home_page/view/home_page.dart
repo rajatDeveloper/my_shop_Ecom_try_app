@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_shop_app_ktl/screen/home_page/widget/banner_product.dart';
 import 'package:my_shop_app_ktl/screen/home_page/widget/drawer_data.dart';
+import 'package:my_shop_app_ktl/screen/home_page/widget/grid_view_product.dart';
 import 'package:my_shop_app_ktl/screen/home_page/widget/horizonatl_list.dart';
 
 class HomePage extends StatefulWidget {
@@ -49,7 +50,23 @@ class _HomePageState extends State<HomePage> {
               textScaleFactor: 1.4,
             ),
           ),
-          HorizonatalListCg()
+          HorizonatalListCg(),
+          Padding(
+              padding: EdgeInsets.all(8),
+              child: Text(
+                "Recent Product",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 32, 83, 109)),
+                textScaleFactor: 1.4,
+              )),
+
+          //Grid view
+          Container(
+            height: 400,
+            color: Color.fromARGB(255, 32, 83, 109),
+            child: ProductGrid(),
+          )
         ],
       ),
     );

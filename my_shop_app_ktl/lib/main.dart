@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_shop_app_ktl/screen/home_page/view/home_page.dart';
+import 'package:my_shop_app_ktl/screen/home_page/view/product_detail.dart';
 import 'package:my_shop_app_ktl/utils/routes.dart';
 
 void main() {
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.homeRoute: (context) => HomePage(),
           // MyRoutes.loginRoute: (context) => LoginPage(),
           // MyRoutes.cartRoute: (context) => CartPage(),
+          MyRoutes.product_data: (context) => ProductDataOneToOne(),
         });
   }
 }
